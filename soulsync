@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { PlayCircle, Brain, Sparkles, User, Moon, MessageSquare } from "lucide-react";
-
 export default function SoulSyncLanding() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 text-white px-6 py-12">
@@ -12,7 +11,6 @@ export default function SoulSyncLanding() {
           <Button size="lg">🚀 Request Early Access</Button>
         </div>
       </header>
-
       <section className="grid md:grid-cols-3 gap-6 mb-20">
         <Card className="bg-gray-800">
           <CardContent className="p-6">
@@ -50,7 +48,6 @@ export default function SoulSyncLanding() {
           </CardContent>
         </Card>
       </section>
-
       <section className="text-center">
         <h2 className="text-3xl font-bold mb-4">🎥 Experience the Future</h2>
         <p className="text-lg text-gray-400 mb-6">Watch how SoulSync AI captures thought, emotion, and consciousness — in real time.</p>
@@ -58,7 +55,6 @@ export default function SoulSyncLanding() {
           <PlayCircle className="mr-2" /> Watch Demo
         </Button>
       </section>
-
       <footer className="mt-24 text-center text-sm text-gray-500">
         “We are not just uploading memories. We are designing digital souls.”
       </footer>
