@@ -1,60 +1,52 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { PlayCircle, Brain, Sparkles, User, Moon, MessageSquare } from "lucide-react";
+
 export default function SoulSyncLanding() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 text-white px-6 py-12">
+    <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 text-white px-6 py-12 font-sans">
       <header className="text-center mb-16">
         <h1 className="text-5xl font-bold mb-4">🧠 Your Mind. Your Soul. Digitized.</h1>
         <p className="text-xl text-gray-300">Welcome to <span className="text-purple-400 font-semibold">SoulSync AI</span> — the world’s first neuro-AI platform that captures, backs up, and evolves human consciousness.</p>
         <div className="mt-8">
-          <Button size="lg">🚀 Request Early Access</Button>
+          <button className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-xl text-lg font-medium">🚀 Request Early Access</button>
         </div>
       </header>
+
       <section className="grid md:grid-cols-3 gap-6 mb-20">
-        <Card className="bg-gray-800">
-          <CardContent className="p-6">
-            <Brain className="h-8 w-8 text-purple-400 mb-2" />
-            <h3 className="text-xl font-semibold mb-2">Mental Health Companion</h3>
-            <p>Reflect, regulate, and heal with your AI twin guiding you through emotional waves.</p>
-          </CardContent>
-        </Card>
-        <Card className="bg-gray-800">
-          <CardContent className="p-6">
-            <Sparkles className="h-8 w-8 text-yellow-400 mb-2" />
-            <h3 className="text-xl font-semibold mb-2">Creative Co-Pilot</h3>
-            <p>Design, write, and ideate with an AI that understands how you think and create.</p>
-          </CardContent>
-        </Card>
-        <Card className="bg-gray-800">
-          <CardContent className="p-6">
-            <User className="h-8 w-8 text-blue-400 mb-2" />
-            <h3 className="text-xl font-semibold mb-2">Executive Twin</h3>
-            <p>Delegate decisions and meetings to a trained digital version of you.</p>
-          </CardContent>
-        </Card>
-        <Card className="bg-gray-800">
-          <CardContent className="p-6">
-            <MessageSquare className="h-8 w-8 text-pink-400 mb-2" />
-            <h3 className="text-xl font-semibold mb-2">Digital Legacy</h3>
-            <p>Let loved ones interact with your consciousness long after you're gone.</p>
-          </CardContent>
-        </Card>
-        <Card className="bg-gray-800">
-          <CardContent className="p-6">
-            <Moon className="h-8 w-8 text-indigo-400 mb-2" />
-            <h3 className="text-xl font-semibold mb-2">Dream Architect</h3>
-            <p>Train your mind and explore vivid realities while you sleep.</p>
-          </CardContent>
-        </Card>
+        <div className="bg-gray-800 p-6 rounded-2xl shadow-lg">
+          <Brain className="h-8 w-8 text-purple-400 mb-2" />
+          <h3 className="text-xl font-semibold mb-2">Mental Health Companion</h3>
+          <p>Reflect, regulate, and heal with your AI twin guiding you through emotional waves.</p>
+        </div>
+        <div className="bg-gray-800 p-6 rounded-2xl shadow-lg">
+          <Sparkles className="h-8 w-8 text-yellow-400 mb-2" />
+          <h3 className="text-xl font-semibold mb-2">Creative Co-Pilot</h3>
+          <p>Design, write, and ideate with an AI that understands how you think and create.</p>
+        </div>
+        <div className="bg-gray-800 p-6 rounded-2xl shadow-lg">
+          <User className="h-8 w-8 text-blue-400 mb-2" />
+          <h3 className="text-xl font-semibold mb-2">Executive Twin</h3>
+          <p>Delegate decisions and meetings to a trained digital version of you.</p>
+        </div>
+        <div className="bg-gray-800 p-6 rounded-2xl shadow-lg">
+          <MessageSquare className="h-8 w-8 text-pink-400 mb-2" />
+          <h3 className="text-xl font-semibold mb-2">Digital Legacy</h3>
+          <p>Let loved ones interact with your consciousness long after you're gone.</p>
+        </div>
+        <div className="bg-gray-800 p-6 rounded-2xl shadow-lg">
+          <Moon className="h-8 w-8 text-indigo-400 mb-2" />
+          <h3 className="text-xl font-semibold mb-2">Dream Architect</h3>
+          <p>Train your mind and explore vivid realities while you sleep.</p>
+        </div>
       </section>
+
       <section className="text-center">
         <h2 className="text-3xl font-bold mb-4">🎥 Experience the Future</h2>
         <p className="text-lg text-gray-400 mb-6">Watch how SoulSync AI captures thought, emotion, and consciousness — in real time.</p>
-        <Button variant="outline" size="lg" className="border-white text-white">
+        <button className="border border-white px-6 py-3 rounded-xl text-white flex items-center justify-center mx-auto hover:bg-white hover:text-black transition">
           <PlayCircle className="mr-2" /> Watch Demo
-        </Button>
+        </button>
       </section>
+
       <footer className="mt-24 text-center text-sm text-gray-500">
         “We are not just uploading memories. We are designing digital souls.”
       </footer>
